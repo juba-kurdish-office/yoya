@@ -257,7 +257,7 @@ const { channel } = message.member.voice;
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
                     .setImage("https://cdn.discordapp.com/attachments/779341728695451678/897772426086215680/standard_22.gif")
-                    .setDescription(`<:emoji_290:963038940665876511> Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration** ${np} minutes \n\n **Status:** Resumed by ${b.clicker.member} \n\n *Only author can skip and loop song* `)
+                    .setDescription(`<:emoji_290:963038940665876511> Title:** [${song.title}](${song.url}) \n\n **<:emoji_290:963038940665876511>Song Duration** ${np} minutes \n\n **Status:** Resumed by ${b.clicker.member} \n\n *Only author can skip and loop song* `)
                     .setFooter(`Played by: ${message.member.displayName} `, message.author.displayAvatarURL());
 
       const embed2 = new MessageEmbed()
@@ -266,7 +266,7 @@ const { channel } = message.member.voice;
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
                     .setImage("https://cdn.discordapp.com/attachments/779341728695451678/897772426086215680/standard_22.gif")
-                    .setDescription(`**<:emoji_290:963038940665876511>Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration:** ${np} minutes \n\n **Status:** Paused by ${b.clicker.member} \n\n *Only author can skip and loop song* `)
+                    .setDescription(`**<:emoji_290:963038940665876511>Title:** [${song.title}](${song.url}) \n\n **<:emoji_290:963038940665876511>Song Duration:** ${np} minutes \n\n **Status:** Paused by ${b.clicker.member} \n\n *Only author can skip and loop song* `)
                     .setFooter(`Played by: ${message.member.displayName}`, message.author.displayAvatarURL());
 
                      const embed5 = new MessageEmbed()
@@ -275,7 +275,7 @@ const { channel } = message.member.voice;
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
                     .setImage("https://cdn.discordapp.com/attachments/779341728695451678/897772426086215680/standard_22.gif")
-                    .setDescription(`**<:emoji_290:963038940665876511> Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration** ${np} minutes \n\n **Status:** Skiped by ${b.clicker.member} `)
+                    .setDescription(`**<:emoji_290:963038940665876511> Title:** [${song.title}](${song.url}) \n\n **<:emoji_290:963038940665876511>Song Duration** ${np} minutes \n\n **Status:** Skiped by ${b.clicker.member} `)
                     .setFooter(`Played by: ${message.member.displayName} `, message.author.displayAvatarURL());
 
         if(b.id == "pause") {
