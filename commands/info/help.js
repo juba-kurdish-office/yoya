@@ -36,7 +36,7 @@ module.exports = {
     const info = new Discord.MessageEmbed()
     .setColor(Color)
     .setTitle(`Info Page`)
-    .setDescription(`Here are all the Info commands: \n\n \`help\`, \`invite\`, \`ping\`,`)
+    .setDescription(`Here are all the Info commands: \n\n \`help\`, \`invite\`, \`ping\`, \`about\`,`)
     .setFooter(`Requested by: ${message.author.tag}`)
 
 		const admin = new Discord.MessageEmbed()
