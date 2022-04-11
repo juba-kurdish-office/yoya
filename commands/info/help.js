@@ -17,7 +17,6 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
     .setTitle(`${bot} Help pages`)
     .setDescription(` Hello im yoya bots to any help join a my discird server in bio and dm to my creator bots `)
-		.setImage(`https://media.discordapp.net/attachments/947939971669577758/949697763594088528/981f0c7b8eebaa8010ef597debb080d7.gif`)
 		
     .setColor("RANDOM")
     .setFooter(`Requested by: ${message.author.tag}`)
