@@ -81,7 +81,7 @@ const economy = new Discord.MessageEmbed()
     .setID(`music`)
 	
     .setStyle("blurple")
-		.setEmoji('🎶');
+		.setEmoji('963038940665876511');
     
 
     let button2 = new MessageButton()
