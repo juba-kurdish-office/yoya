@@ -168,7 +168,7 @@ require('http').createServer((req, res) => res.end(`
 `)).listen(3000) //Dont remove this 
 
 client.on("ready", () => {
-   client.user.setActivity(`${PREFIX}help v13 | ${client.guilds.cache.size} Servers`); 
+   client.user.setActivity(`y!help | v13`);  
 
  console.log(`Successfully logined as ${client.user.tag} `)
 });
