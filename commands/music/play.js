@@ -90,7 +90,7 @@ module.exports = {
     .setEmoji('🔂');
 
 let rowss = new MessageActionRow()
-    .addComponets(button5, button6);
+    .addComponents(button5, button6);
 
 
     let row = new MessageActionRow()
