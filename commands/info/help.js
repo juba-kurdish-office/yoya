@@ -16,11 +16,9 @@ module.exports = {
 
     const embed = new Discord.MessageEmbed()
     .setTitle(`${bot} Help pages`)
-    .setDescription(` Hello **${message.author.username}**, \n *Choose an category below to see commands* \n\n :question: New to ${bot}? Check out server \n https://discord.com/api/oauth2/authorize?client_id=862989897954623500&permissions=1634503490528&scope=bot%20applications.commands \n\n Also Join Our Developer Server \n https://discord.gg/jHPs78cVFh`)
+    .setDescription(` Hello im yoya bots to any help join a my discird server in bio and dm to my creator bots `)
 		.setImage(`https://media.discordapp.net/attachments/947939971669577758/949697763594088528/981f0c7b8eebaa8010ef597debb080d7.gif`)
 		
-		.addField(`invite me:`, `https://discord.com/api/oauth2/authorize?client_id=862989897954623500&permissions=1634503490528&scope=bot%20applications.commands`)
-		.addField(`Support Email`, `${supportEmail}`)
     .setColor("RANDOM")
     .setFooter(`Requested by: ${message.author.tag}`)
 		
@@ -31,7 +29,6 @@ module.exports = {
     .setColor(Color)
 		
     .setTitle(`Music`)
-    .setImage(`https://media.discordapp.net/attachments/947939971669577758/949695029474111588/4musictrandrib.gif`)
     .setDescription(`<:emoji_20:949016064782663710>Music page: \n\n \`join\`, \`leave\`, \`loop\`, \`nowplaying\`, \`pause\`,  \`play\`,  \`queue\`,  \`remove\`,  \`resume\`,  \`search\`,  \`skip\`,  \`skipall\`,  \`stop\`,`)
     .setFooter(`Requested by: ${message.author.tag}`)
 
@@ -40,34 +37,28 @@ module.exports = {
     const info = new Discord.MessageEmbed()
     .setColor(Color)
     .setTitle(`Info Page`)
-	
-		.setImage(`https://media.discordapp.net/attachments/947939971669577758/949695556618420244/LOGO_INFO.gif`)
     .setDescription(`Here are all the Info commands: \n\n \`help\`, \`invite\`, \`ping\`,`)
     .setFooter(`Requested by: ${message.author.tag}`)
 
 		const admin = new Discord.MessageEmbed()
     .setColor(Color)
     .setTitle(`Admin Page`)
-		.setImage(`https://media.discordapp.net/attachments/947939971669577758/949696401233805332/pp_logo.gif`)
 		.setDescription(`Here are all the Admin commands: \n\n \`purge\`, \`poll\`, \`announce\`,`)
 	.setFooter(`Requested by: ${message.author.tag}`)
 
 const economy = new Discord.MessageEmbed()
     .setColor(Color)
     .setTitle(`economy Page`)
-.setImage(`https://media.discordapp.net/attachments/947939971669577758/949693911583064144/economy.gif`)
 .setDescription(`Here are all the economy commands: \n\n \`cash |c\`/ \`daily |d\`/ \`deposit‌ |dep\`/ \`withdraw |wd\`/ \`send\`/ \`roulette |r\`/ \`slots‌ |sl\`/ \`weekly |week\`/ \`work\`/`)
 
 		const ticket = new Discord.MessageEmbed()
     .setColor(Color)
     .setTitle(`Ticket Page`)
-		.setImage(`https://media.discordapp.net/attachments/947939971669577758/949696848195624991/ticket_2__converted__3.gif`)
 	.setDescription(`Here are all the Ticket commands: \n\n \`open\`, \`close\`,`)
 
 		 const suggest = new Discord.MessageEmbed()
     .setColor(Color)
     .setTitle(`suggest page`)
-.setImage(`https://media.discordapp.net/attachments/947939971669577758/949697263133917274/attachment_83773038-1.gif`)
     .setDescription(`Here are all the suggest commands: \n\n \`set-suggest\`, \`suggest\`,`)
     .setFooter(`Requested by: ${message.author.tag}`)
 
