@@ -155,7 +155,7 @@ let rowss = new MessageActionRow()
                     else {
                         const sembed = new MessageEmbed()
                             .setColor("GREEN")
-                            .setTitle("<:emoji_17:947840375068966953> Added To Queue", message.author.displayAvatarURL())
+                            .setTitle("<:emoji_290:963038940665876511> Added To Queue", message.author.displayAvatarURL())
                             .setThumbnail(song.thumbnail)
                             .setTimestamp()
                             .setImage("https://cdn.discordapp.com/attachments/779341728695451678/897772426086215680/standard_22.gif")
@@ -221,7 +221,7 @@ let rowss = new MessageActionRow()
         
                 const embed = new MessageEmbed()
                     .setColor("GREEN")
-                    .setTitle('<:emoji_17:947840375068966953> Started Playing')
+                    .setTitle('<:emoji_290:963038940665876511> Started Playing')
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
                     .setImage("https://cdn.discordapp.com/attachments/779341728695451678/897772426086215680/standard_22.gif")
@@ -230,10 +230,10 @@ let rowss = new MessageActionRow()
 
                     const embed3 = new MessageEmbed()
                     .setColor("GREEN")
-                    .setTitle('<:emoji_17:947840375068966953> Song was Ended')
+                    .setTitle('<:emoji_290:963038940665876511> Song was Ended')
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
-                    .setDescription(`<:937063728459948063:945670433343156234>Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration** ${np} minutes \n\n **Status:** **Finished** `)
+                    .setDescription(`<:emoji_290:963038940665876511> Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration** ${np} minutes \n\n **Status:** **Finished** `)
                     .setFooter(`Played by: ${message.member.displayName} `, message.author.displayAvatarURL());
 
   
@@ -253,11 +253,11 @@ const { channel } = message.member.voice;
         
       const embed4 = new MessageEmbed()
                     .setColor("GREEN")
-                    .setTitle('<:emoji_17:947840375068966953> Started Playing')
+                    .setTitle('<:emoji_290:963038940665876511> Started Playing')
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
                     .setImage("https://cdn.discordapp.com/attachments/779341728695451678/897772426086215680/standard_22.gif")
-                    .setDescription(`<:937063728459948063:945670433343156234>Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration** ${np} minutes \n\n **Status:** Resumed by ${b.clicker.member} \n\n *Only author can skip and loop song* `)
+                    .setDescription(`<:emoji_290:963038940665876511> Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration** ${np} minutes \n\n **Status:** Resumed by ${b.clicker.member} \n\n *Only author can skip and loop song* `)
                     .setFooter(`Played by: ${message.member.displayName} `, message.author.displayAvatarURL());
 
       const embed2 = new MessageEmbed()
@@ -266,16 +266,16 @@ const { channel } = message.member.voice;
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
                     .setImage("https://cdn.discordapp.com/attachments/779341728695451678/897772426086215680/standard_22.gif")
-                    .setDescription(`**<:937063728459948063:945670433343156234>Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration:** ${np} minutes \n\n **Status:** Paused by ${b.clicker.member} \n\n *Only author can skip and loop song* `)
+                    .setDescription(`**<:emoji_290:963038940665876511>Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration:** ${np} minutes \n\n **Status:** Paused by ${b.clicker.member} \n\n *Only author can skip and loop song* `)
                     .setFooter(`Played by: ${message.member.displayName}`, message.author.displayAvatarURL());
 
                      const embed5 = new MessageEmbed()
                     .setColor("GREEN")
-                    .setTitle('<:emoji_17:947840375068966953> Started Playing')
+                    .setTitle('<:emoji_290:963038940665876511> Started Playing')
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
                     .setImage("https://cdn.discordapp.com/attachments/779341728695451678/897772426086215680/standard_22.gif")
-                    .setDescription(`**<:937063728459948063:945670433343156234>Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration** ${np} minutes \n\n **Status:** Skiped by ${b.clicker.member} `)
+                    .setDescription(`**<:emoji_290:963038940665876511> Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration** ${np} minutes \n\n **Status:** Skiped by ${b.clicker.member} `)
                     .setFooter(`Played by: ${message.member.displayName} `, message.author.displayAvatarURL());
 
         if(b.id == "pause") {
