@@ -23,7 +23,7 @@ module.exports = {
       let button1 = new disbut.MessageButton()
       .setStyle('url')
       .setLabel('🧪Invite') 
-      .setURL(`https://discord.com/api/oauth2/authorize?client_id=862989897954623500&permissions=1634503490528&scope=bot%20applications.commands`);
+      .setURL(`https://discord.com/api/oauth2/authorize?client_id=791856757844475914&permissions=1634272279905&scope=bot`);
       let button2 = new disbut.MessageButton()
       .setStyle('url')
       .setLabel('💌Support Server') 
