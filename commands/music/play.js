@@ -159,7 +159,7 @@ let rowss = new MessageActionRow()
                             .setThumbnail(song.thumbnail)
                             .setTimestamp()
                             .setImage("https://cdn.discordapp.com/attachments/779341728695451678/897772426086215680/standard_22.gif")
-                            .setDescription(`**<:937063728459948063:945670433343156234> Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration:** ${np} minutes \n\n **Status:** Pending`)
+                            .setDescription(`**<:emoji_290:963038940665876511> Title:** [${song.title}](${song.url}) \n\n **<:emoji_290:963038940665876511>Song Duration:** ${np} minutes \n\n **Status:** Pending`)
                             .setFooter(`Added By: ${message.member.displayName}`);
                         message.channel.send(sembed)
                     }
@@ -225,7 +225,7 @@ let rowss = new MessageActionRow()
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
                     .setImage("https://cdn.discordapp.com/attachments/779341728695451678/897772426086215680/standard_22.gif")
-                    .setDescription(`**<:937063728459948063:945670433343156234>Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration** ${np} minutes \n\n **Status:** **Playing** \n\n *Only author can skip and loop song*`)
+                    .setDescription(`**<:emoji_290:963038940665876511>Title:** [${song.title}](${song.url}) \n\n **<:emoji_290:963038940665876511>Song Duration** ${np} minutes \n\n **Status:** **Playing** \n\n *Only author can skip and loop song*`)
                     .setFooter(`Played by: ${message.member.displayName} `, message.author.displayAvatarURL());
 
                     const embed3 = new MessageEmbed()
@@ -233,7 +233,7 @@ let rowss = new MessageActionRow()
                     .setTitle('<:emoji_290:963038940665876511> Song was Ended')
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
-                    .setDescription(`<:emoji_290:963038940665876511> Title:** [${song.title}](${song.url}) \n\n **<:937063387236552714:945670433280233482>Song Duration** ${np} minutes \n\n **Status:** **Finished** `)
+                    .setDescription(`<:emoji_290:963038940665876511> Title:** [${song.title}](${song.url}) \n\n **<:emoji_290:963038940665876511>Song Duration** ${np} minutes \n\n **Status:** **Finished** `)
                     .setFooter(`Played by: ${message.member.displayName} `, message.author.displayAvatarURL());
 
   
