@@ -7,14 +7,14 @@ const votes = 'soon';
 
 module.exports = {
 name: "botinfo",
-aliases: ["bot"],
+aliases: ["about"],
 run: async(client, message, args) => {
 
 let embed = new MessageEmbed()
 .setTitle(`Bot Info`)
 .addField(`📨 Servers:`, `${client.guilds.cache.size}` )
 .addField(`🫂 Users`, `${client.users.cache.size}`)
-.addField(`👨‍🔧 Developer`, `${developer}`)
+.addField(`👨‍🔧 Developer`, `${owner}`)
 .addField(`📤 MemberCount`, `${message.guild.memberCount}`)
 .addField(`🏛 ServerName`, `${message.guild.name}`)
 .addField(`🚀 ServerID`, `${message.guild.id}`)
