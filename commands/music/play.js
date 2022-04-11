@@ -39,66 +39,66 @@ module.exports = {
     .setLabel(`Pause`)
     .setID(`pause`)
     .setStyle("red")
-    .setEmoji('945670433200541727');
+    .setEmoji('⏯️');
 
     let button2 = new MessageButton()
     .setLabel(`Resume`)
     .setID(`resume`)
     .setStyle("green")
-    .setEmoji('945670433007632467');
+    .setEmoji('▶️');
 
     let button3 = new MessageButton()
     .setLabel(`stop`)
     .setID(`stop`)
     .setStyle("green")
-    .setEmoji('945670433166999604');
+    .setEmoji('⏹️');
 
     let button4 = new MessageButton()
     .setLabel(`Skip`)
     .setID(`skip`)
     .setStyle("green")
-    .setEmoji('945670433166999604');
+    .setEmoji('⏩');
 
     let button5 = new MessageButton()
     .setLabel(`Pause`)
     .setID(`dpause`)
     .setDisabled()
     .setStyle("grey")
-    .setEmoji('945670433200541727');
+    .setEmoji('⏸️');
 
      let button6 = new MessageButton()
     .setLabel(`Resume`)
     .setID(`dresume`)
     .setDisabled()
     .setStyle("grey")
-    .setEmoji('945670433007632467');
+    .setEmoji('▶️');
 
      let button7 = new MessageButton()
     .setLabel(`stop`)
     .setID(`dstop`)
     .setDisabled()
     .setStyle("grey")
-    .setEmoji('945670433166999604');
+    .setEmoji('⏹️');
 
      let button8 = new MessageButton()
     .setLabel(`Skip`)
     .setID(`dskip`)
     .setDisabled()
     .setStyle("grey")
-    .setEmoji('945670433166999604');
+    .setEmoji('⏩');
 
     let button9 = new MessageButton()
     .setLabel(`Loop`)
     .setID(`loop`)
     .setStyle("blurple")
-    .setEmoji('945671006406709318');
+    .setEmoji('🔂');
 
     let button10 = new MessageButton()
     .setLabel(`Loop`)
     .setID(`dloop`)
     .setDisabled()
     .setStyle("grey")
-    .setEmoji('945671006406709318');
+    .setEmoji('🔂');
 
 let rowss = new MessageActionRow()
     .addComponents(button4, button5, button6, button8);
