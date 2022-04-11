@@ -333,25 +333,6 @@ if (message.guild.me.voice.channel !== message.member.voice.channel) {
             
         }
 
-         if(b.id == "skip") {
-
-           if (!channel) return await b.reply.send('You need to be in voice channel', true);
-if (message.guild.me.voice.channel !== message.member.voice.channel) {
-            return await b.reply.send('You have to join my VC', true);
-        }
-
-       if (b.clicker.id === message.author.id) {
-        serverQueue.connection.dispatcher.end();
-        MESSAGE.edit(embed6, rowss);
-        return await b.reply.send('Skiped!', true)
-        
-         }
-         return await b.reply.send(`Only ${message.author.username} can skip! Please contact him to skip`, true)
-      
-       
-            
-            
-        }
 
 
          if(b.id == "loop") {
