@@ -117,7 +117,7 @@ let rowss = new MessageActionRow()
                     var video = await youtube.getVideoByID(videos[0].id);
                 } catch (err) {
                     console.error(err)
-                    return message.channel.send(`Sorry ${messahe.author.username}, I cant find that song`)
+                    return message.channel.send(`Sorry ${message.author.username}, I cant find that song`)
                 }
             }
             return handleVideo(video, message, channel);
