@@ -102,8 +102,8 @@ cooldown.delete(message.author.id)}, cdseconds * 1000)
 
   if (!command) command = client.commands.get(client.aliases.get(cmd));
 
-  if (command.premium) {
-    let guild = await db.get(`premium_${message.guild.id}`);
+  if (command.everyone) {
+    let guild = await db.get(`everyone_${message.guild.id}`);
 
 
     if (!guild) {
