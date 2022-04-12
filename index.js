@@ -12,14 +12,14 @@ db.options({
   filename: 'ec.sqlite'
 })
 
-client.login(TOKEN).catch(console.error);
+client.login("NzkxODU2NzU3ODQ0NDc1OTE0.X-VQEw.DVzu7724D_lM_BpcexM_Io6axKg").catch(console.error);
 
 
 require(`${process.cwd()}/handlers/eventHandler.js`)(client);
 require(`${process.cwd()}/handlers/commandHandler.js`)(client);
 
 client.config = require(`${process.cwd()}/Configuration/config.json`);
-client.env = process.env;
+client.index.js = process.index.js;
 client.db = db;
 
 //process.on("unhandledRejection", (err) => {
