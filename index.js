@@ -107,7 +107,7 @@ cooldown.delete(message.author.id)}, cdseconds * 1000)
 
 
     if (!guild) {
-      return message.channel.send(`You can use this command in only premium server. \n **Want to make your server premium?** Donate US!: https://discord.gg/`)
+      return message.channel.send(`You can use this command in only premium server. \n **Want to make your server premium?** Donate US <@730549617044750346>!: https://discord.gg/Mike`)
     }
 
   }
