@@ -39,6 +39,26 @@ client.aliases = new Discord.Collection();
 process.on('UnhandledRejection', console.error);
  
 
+
+global.mongoose = require("mongoose");
+mongoose
+  .connect(
+    "mongodb+srv://jubadevlopment:g112233s@cluster0.js1to.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  )
+  .then(() => {
+    console.log("Connected to the Mongodb database.");
+  })
+  .catch(err => {
+    console.log("Unable to connect to the Mongodb database. Error:" + err);
+  });
+
+
+
+
+
+
+
 client.on("message", async message => {
   let prefix;
     if (message.author.bot || message.channel.type === "dm") return;
