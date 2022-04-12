@@ -38,6 +38,64 @@ client.aliases = new Discord.Collection();
 });
 process.on('UnhandledRejection', console.error);
  
+global.logChannel = bot.channels.cache.get("963037041648603192")
+ 
+global.mongoose = require("mongoose");
+mongoose
+  .connect(
+    "mongodb+srv://jubadevlopment:g112233s@cluster0.js1to.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  )
+  .then(() => {
+    console.log("Connected to the Mongodb database.");
+  })
+  .catch(err => {
+    console.log("Unable to connect to the Mongodb database. Error:" + err);
+  });
+
+global.Guild = require("./data/guild.js");
+global.User = require("./data/user.js");
+global.Owner = require("./data/owner.js");
+global.Prime = require("./data/prime.js");
+global.Lang = require("./data/lang.js");
+global.Black = require("./data/blacklist");
+bot.commands = new Collection();
+bot.aliases = new Collection();
+bot.cooldowns = new Collection();
+bot.catagories = fs.readdirSync("./commands/");
+["command"].forEach(handler => {
+  require(`./handler/${handler}`)(bot);
+});
+
+/**/
+let util = require("util"),
+  readdir = util.promisify(fs.readdir);
+
+const init = async () => {
+  // Then we load events, which will include our message and ready event.
+  const evtFiles = await readdir("./events/");
+  console.log(`Loading a total of ${evtFiles.length} events.`, "log");
+  evtFiles.forEach(file => {
+    const eventName = file.split(".")[0];
+    console.log(`Loading Event: ${eventName}`);
+    const event = new (require(`./events/${file}`))(bot);
+    bot.on(eventName, (...args) => event.run(...args, bot));
+    delete require.cache[require.resolve(`./events/${file}`)];
+  });
+};
+init();
+
+bot.on("ready", () => {
+  console.log(`[!]-------------------------------------[!]`);
+  console.log(`Display Name ; ${bot.user.username}`);
+  console.log(`Public Prefix : ${prefix}`);
+  console.log(`Version : 4.0.0`);
+  console.log(`[!]-------------------------------------[!]`);
+});
+
+
+
+
 
 client.on("message", async message => {
   let prefix;
@@ -176,4 +234,4 @@ client.on("ready", () => {
 
 
 
-client.login("NzkxODU2NzU3ODQ0NDc1OTE0.X-VQEw.DVzu7724D_lM_BpcexM_Io6axKg");
+client.login("NzkxODU2NzU3ODQ0NDc1OTE0.X-VQEw.NpTiTkY_yYJ01_wzTTlEmq5pzvk");
