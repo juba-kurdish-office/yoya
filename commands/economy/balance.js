@@ -1,44 +1,35 @@
-const { MessageEmbed } = require("discord.js");
-const db = require("quick.db");
+const Discord = require("discord.js");
+const { match } = require("../../functions.js")
 
 module.exports = {
-    name: "cash",
-    aliases: ["c"],
-    category: "economy",
-    description: "Shows Current Balance",
-    usage: "[username | nickname | mention | ID](optional)",
-    accessableby: "everyone"
-  ,
-  run: async (bot, message, args) => {
-    let user =
-      message.mentions.members.first() ||
-      message.guild.members.cache.get(args[0]) ||
-      message.guild.members.cache.find(
-        r =>
-          r.user.username.toLowerCase() === args.join(" ").toLocaleLowerCase()
-      ) ||
-      message.guild.members.cache.find(
-        r => r.displayName.toLowerCase() === args.join(" ").toLocaleLowerCase()
-      ) ||
-      message.member;
+	help: {
+		name: "balance",
+		description: "Check's your balance!",
+		aliases: ["bal"],
+		category: "Economy"
+	},
 
-    let bal = db.fetch(`money_${user.id}`);
+run: async(client, message, args) => {
 
-    if (bal === null) bal = 0;
+  let user = message.mentions.users.first() ||
+  client.users.cache.get(args[0]) ||
+  match(args.join(" ").toLowerCase(), message.guild) || 
+  message.author;
 
-    let bank = await db.fetch(`bank_${user.id}`);
+  let bal = await client.db.fetch(`money_${message.guild.id}_${user.id}.pocket`);
+  if (bal === null) bal = 0;
 
-    if (bank === null) bank = 0;
-let Total = bal + bank
-    if (user) {
-      let moneyEmbed = new MessageEmbed()
-        .setColor("BLUE")
-        .setDescription(
-          `**${user.user.username}'s Balance**\n**Cash:** ${bal}$\n**Bank:** ${bank}\n**Total:** ${Total}`
-        );
-      message.channel.send(moneyEmbed);
-    } else {
-      return message.channel.send("**Enter A Valid User!**");
-    }
-  }
-};
+  let bank = await client.db.fetch(`money_${message.guild.id}_${user.id}.bank`);
+  if (bank === null) bank = 0;
+
+  let TotalMoney = bank + bal;
+
+  let moneyEmbed = new Discord.MessageEmbed()
+  .setColor("#FFFFFF")
+  .setDescription(`**${user}'s Balance**\n
+  **Pocket:** ${bal}
+  **Bank:** ${bank}
+  **Total:** ${TotalMoney}`);
+  message.channel.send(moneyEmbed)
+	}
+}
