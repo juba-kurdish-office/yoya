@@ -3,7 +3,6 @@ const db = require("quick.db");
 const ms = require("parse-ms");
 
 module.exports = {
-	help: {
 		name: "profile",
 		description: "Get the profile/Inventory of someone!",
 		aliases: ["inventory", "inv"],
