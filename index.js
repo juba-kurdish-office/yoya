@@ -101,6 +101,6 @@ bot.on("messageCreate", async message => {
 /////
 
 
-bot.login("NzkxODU2NzU3ODQ0NDc1OTE0.X-VQEw.9cWcKIBP7DWuGXKQ62ihXMrz-pA");
+bot.login("NzkxODU2NzU3ODQ0NDc1OTE0.X-VQEw.NpTiTkY_yYJ01_wzTTlEmq5pzvk");
 
 
