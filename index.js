@@ -38,7 +38,6 @@ client.aliases = new Discord.Collection();
 });
 process.on('UnhandledRejection', console.error);
  
-global.logChannel = bot.channels.cache.get("963037041648603192")
  
 global.mongoose = require("mongoose");
 mongoose
