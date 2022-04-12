@@ -19,7 +19,7 @@ require(`${process.cwd()}/handlers/eventHandler.js`)(client);
 require(`${process.cwd()}/handlers/commandHandler.js`)(client);
 
 client.config = require(`${process.cwd()}/Configuration/config.json`);
-client.index.js = process.index.js;
+client.env = process.env;
 client.db = db;
 
 //process.on("unhandledRejection", (err) => {
