@@ -5,7 +5,7 @@ module.exports = {
 	help: {
 		name: "weekly",
 		description: "Get your weekly money!",
-		category: "Economy"
+		category: "economy"
 	},
 	
 run: async (client, message, args) => {
