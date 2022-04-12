@@ -52,21 +52,7 @@ mongoose
     console.log("Unable to connect to the Mongodb database. Error:" + err);
   });
 
-global.Guild = require("./data/guild.js");
-global.User = require("./data/user.js");
-global.Owner = require("./data/owner.js");
-global.Prime = require("./data/prime.js");
-global.Lang = require("./data/lang.js");
-global.Black = require("./data/blacklist");
-bot.commands = new Collection();
-bot.aliases = new Collection();
-bot.cooldowns = new Collection();
-bot.catagories = fs.readdirSync("./commands/");
-["commands"].forEach(handler => {
-  require(`./handler/${handler}`)(bot);
-});
 
-/**/
 let util = require("util"),
   readdir = util.promisify(fs.readdir);
 
