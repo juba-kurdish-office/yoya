@@ -6,7 +6,7 @@ module.exports = {
 		name: "balance",
 		description: "Check's your balance!",
 		aliases: ["bal"],
-		category: "Economy"
+		category: "economy"
 	},
 
 run: async(client, message, args) => {
